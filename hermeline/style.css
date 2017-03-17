@@ -1,0 +1,76 @@
+body{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 40em;
+}
+.container{
+  width: 30em;
+  display: flex;
+  flex-wrap: wrap;
+  border: 3px solid #181719;
+}
+.ecran, .solu{
+  width: 30em;
+  height: 3em;
+  border: solid 2px grey;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
+.operant{
+  /*width: 7em;*/
+  width:100%;
+  height: 2em;
+  border: 2px solid grey;
+}
+/*#deuz{
+  width: 3em;
+}*/
+.touches, .operateurs{
+  margin-top: 1em;
+  width: 15em;
+  height: 25em;
+  border: solid 2px grey;
+  display:flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  align-items: center;
+  margin-left: 0.5em;
+}
+.tch, .tchop, .tcheff, .tcheg{
+  width: 4em;
+  height: 3em;
+  border: 1px solid grey;
+  border-radius: 3px;
+  display:flex;
+  justify-content: center;
+  align-items: center;
+}
+.operateurs{
+  width: 10em;
+  height: 25em;
+  margin-left: 3.5em;
+}
+.tchop{
+  width: 5em;
+  height: 3em;
+}
+.solu{
+  border:none;
+  margin:0.5em;
+  width: 29em;
+}
+.tcheff{
+  background-color: #D90012;
+  color:white;
+  width: 50%;
+  margin-right: 0.2em;
+}
+.tcheg{
+  background-color: #54F506;
+  color:white;
+  width: 50%;
+  margin-left: 0.2em;
+
+}
