@@ -1,0 +1,57 @@
+.button
+{
+border:1px solid black;
+border-radius:10px;
+background: radial-gradient(#CCCCCC, grey);
+font-size:large;
+}
+
+.affich
+{
+background: linear-gradient(#C0C0C0, #CCCCCC);
+border:3px solid grey;
+text-align:center;
+height:70px;
+
+}
+
+.button:hover
+{
+background: radial-gradient(grey,#CCCCCC);
+}
+
+#calculette
+{
+width:400px;
+height:450px;
+margin:auto;
+background: radial-gradient(#999999,#CCCCCC);
+text-align:center;
+border-radius:3px;
+table-layout:fixed;
+border:2px solid grey;
+padding:0.5%;
+}
+
+#op1 #op2
+{
+height:30%;
+}
+
+
+#result
+{
+    height: 100%;
+    font-size: 182%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#operandeGauche, #operation, #operandeDroite{
+    height: 100%;
+    font-size: 182%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
