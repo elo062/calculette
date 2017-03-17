@@ -1,78 +1,30 @@
-// $("#un").click(function(){
-//   value=1;
-// });
-// $("#deux").click(function(){
-//   value=2;
-// });
-// $("#trois").click(function(){
-//   value=3;
-// });
-// $("#quatre").click(function(){
-//   value=4;
-// });
-// $("#cinq").click(function(){
-//   value=5;
-// });
-// $("#six").click(function(){
-//   value=6;
-// });
-// $("#sept").click(function(){
-//   value=7;
-// });
-// $("#huit").click(function(){
-//   value=8;
-// });
-// $("#neuf").click(function(){
-//   value=9;
-// });
-// $("#zero").click(function(){
-//   value=0;
-// });
-// $("#mul").click(function(){
-//
-// });
-// $("#sous").click(function(){
-//
-// });
-// $("#addi").click(function(){
-//
-// });
-// $("#eff").click(function(){
-// });
-// $("#egal").click(function(){
-//
-// });
-// // console.log($('#un').text());
-//
-// function afficher(){
-//   .text()
-
 var btn = "";
 
+//Récupère les touches "tch" et les rend cliquables
 $(".tch").click(function(){
   btn = $(this).html();
-  $("#premier").append(btn);
+  $("#premier").append(btn);  // Fais ensorte que les clicks s'inscrivent dans la 1ERE CASE
 });
 
-$('#egal').click(function(){
+$('#egal').click(function(){   //Ce qui se passe quand on clisque sur egal :
 
-  var z = $("#premier").text();
+  var z = $("#premier").text();  // var qui prend le texte de la premiere case
 
-  if(z.includes("+")){
-    var posadd =z.indexOf('+');
-    var val1= Number(z.substring(0, posadd));
-    var val2= Number(z.substring(posadd+1, 30));
-    var addit= val1 + val2;
-    $("#deuz").html(addi
+  if(z.includes("+")){     // SI le caractere + est inclus dans la chaine :
+    var posadd =z.indexOf('+');   // trouve sa position :
+    var val1= Number(z.substring(0, posadd));  // récupère ce qui est avant pour le 1er nombre :
+    var val2= Number(z.substring(posadd+1, 30));  // récupère ce qui est APRES pour le 2eme nombre :
+    var addit= val1 + val2;   // Additionne les 2
+    $("#deuz").html(addi);    // Affiche le résultat dans la CASE 2
   }
-  else if(z.includes('-')){
+  else if(z.includes('-')){    // idem au dessus mais avec le -
     var posSous =z.indexOf('-');
     var val1= Number(z.substring(0, posSous));
     var val2= Number(z.substring(posSous+1, 30));
     var sous= val1 - val2;
     $("#deuz").html(sous);
   }
-  else{
+  else{  // idem avec ce qu'il reste, donc le X
     var posx=z.indexOf('X');
     var val1= Number(z.substring(0, posx));
     var val2= Number(z.substring(posx+1, 30));
@@ -81,7 +33,7 @@ $('#egal').click(function(){
   }
 });
 
-$('.tcheff').click(function(){
-  $('#premier').html(' ');
-  $('#deuz').html(' ');
+$('.tcheff').click(function(){    // Quand on clique sur la touche effacer :
+  $('#premier').html(' ');   // dans la premiere case on ne met rien
+  $('#deuz').html(' ');   // idem 2eme case
 })
