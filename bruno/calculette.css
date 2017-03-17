@@ -1,0 +1,18 @@
+#page{
+margin: 10% auto  auto  40%;
+}
+
+#t_calc td input {
+    width  : 2.5em ;
+    height : 2.5em ;
+    font-size : 1.2em ;
+}
+
+#t_calc td input#afficheur {
+    width  : 100% ;
+    text-align : right ;
+}
+
+form{
+    max-width: 200px ;
+}
